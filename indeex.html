@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do_List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <section class="flex justify-around my-6 bg-slate-100">
+    <div class="text-left text-4xl font-bold flex my-6 ">
+    <div class="text-red-500">Task</div>
+    <div class="text-orange-400">Flow</div>
+    
+    </div>
+    <div class=" w-1/2 h-10 flex justify-evenly rounded h-24 items-center">
+        <button class="border-solid border-4 w-52 text-center rounded-lg bg-white h-10	font-bold cursor-cell"> ajouter une tache </button>
+        <input
+        class="border-solid border-4 w-52 text-center rounded-lg bg-white h-10	font-bold"
+        type="text" placeholder="recherche">
+    </div>
+    </section>
+    <section class="flex justify-evenly">
+    <div>
+    <div class="font-bold text-center bg-black text-white rounded-t-lg">TO DO</div>
+    <div class="bg-slate-100 w-60 border-solid  border-4 rounded-b-lg h-80 ">
+        <div class="w-52 h-10 border-orange-400 border-l-8 rounded-r-lg bg-white my-5 justify-self-center	"></div>
+        <div class="w-52 h-10 border-orange-400 border-l-8 rounded-r-lg bg-white my-5 justify-self-center	 "></div>
+        <div class="w-52 h-10 border-orange-400 border-l-8 rounded-r-lg bg-white my-5 justify-self-center	"></div>
+    </div>
+    </div>
+    <div>
+    <div class="font-bold text-center bg-black text-white rounded-t-lg">DOING</div>
+    <div class="bg-slate-100 w-60 border-solid	border-4 rounded-b-lg h-80"></div>
+    </div>
+    <div>
+    <div class="font-bold text-center bg-black text-white rounded-t-lg">DONE</div>
+    <div class="bg-slate-100 w-60 border-solid	border-4 rounded-b-lg h-80"></div>
+    </div>
+    </section>
+</body>
+</html>
