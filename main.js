@@ -66,14 +66,19 @@ function addTaskToList(title, description, status, Priorité, date) {
     });
 
     updateCounters();
+    
 }
 
 addButton.addEventListener('click', () => {
     modal.classList.remove('hidden');
+
+    
 });
 
 closeModalButton.addEventListener('click', () => {
     modal.classList.add('hidden');
+    taskForm.reset();
+
 });
 
 taskForm.addEventListener('submit', (event) => {
