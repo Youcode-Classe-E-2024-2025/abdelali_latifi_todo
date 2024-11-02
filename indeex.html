@@ -7,15 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section class="flex justify-around my-6 bg-black max-sm:mt-0">
-        <div class="text-left text-4xl font-bold flex my-6">
+    <section class="flex justify-around my-6 bg-black max-sm:block max-sm:h-60 max-sm:pt-2">
+        <div class="text-left text-4xl font-bold flex my-6 max-sm:justify-center">
             <div class="text-red-500">Task</div>
             <div class="text-orange-400">Flow</div>
         </div>
-        <div class="w-1/2 h-10 flex justify-evenly rounded h-24 items-center ">
-            <button id="addtaskbutton" class="border-solid border-4 w-52 text-center rounded-lg bg-white h-10 font-bold cursor-pointer max-sm:h-20">Ajouter une tâche</button>
-            <label class="block mb-2">Priorité</label>
-            <select id="priority-select" class="border-solid border-4 w-52 text-center rounded-lg bg-white h-10 font-bold cursor-pointer max-sm:h-20" required>
+        <div class="w-1/2 h-10 flex justify-evenly rounded h-24 items-center  max-sm:w-full max-sm:block max-sm:text-center">
+            <button id="addtaskbutton" class="border-solid border-4 w-52 text-center rounded-lg bg-white h-10 font-bold cursor-pointer ">Ajouter une tâche</button>
+            <label class="block mb-2 max-sm:mt-0">Priorité</label>
+            <select id="priority-select" class="border-solid border-4 w-52 text-center rounded-lg bg-white h-10 font-bold cursor-pointer" required>
                 <option value="P1">P1</option>
                 <option value="P2">P2</option>
                 <option value="P3">P3</option>
