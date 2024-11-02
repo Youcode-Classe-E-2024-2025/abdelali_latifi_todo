@@ -15,7 +15,7 @@ function updateCounters() {
     document.getElementById('donecounter').textContent = doneCount;
 }
 
-function addTaskToList(title, description, status, Priorité) {
+function addTaskToList(title, description, status, Priorité, date) {
     const taskItem = document.createElement('div');
     let borderColor;
 
@@ -32,6 +32,7 @@ function addTaskToList(title, description, status, Priorité) {
         <div>
             <strong>${title}</strong>
             <textarea class="resize-none" readonly>${description}</textarea>
+            <div class="text-sm mb-2">Date: ${date}</div>
             <div class="flex gap-4">
                 <button class="deleteButton bg-red-500 text-white px-2 rounded">Supprimer</button>
                 <button class="editButton bg-cyan-400 text-white px-2 rounded">Modifier</button>
@@ -57,6 +58,8 @@ function addTaskToList(title, description, status, Priorité) {
         document.getElementById('description').value = description;
         document.getElementById('status').value = status;
         document.getElementById('Priorité').value = Priorité;
+        document.getElementById('date').value = date;
+
 
         currentTask = taskItem; 
         modal.classList.remove('hidden');
@@ -80,6 +83,9 @@ taskForm.addEventListener('submit', (event) => {
     const description = document.getElementById('description').value;
     const status = document.getElementById('status').value;
     const priority = document.getElementById('Priorité').value;
+    const date = document.getElementById('date').value;
+
+    
 
 
     if (currentTask) {
@@ -88,10 +94,10 @@ taskForm.addEventListener('submit', (event) => {
 
         const oldStatus = currentTask.getAttribute('data-status'); 
         currentTask.remove();
-        addTaskToList(title, description, status, priority); 
+        addTaskToList(title, description, status, priority, date); 
     } else {
         // Ajouter une nouvelle tâche
-        addTaskToList(title, description, status, priority);
+        addTaskToList(title, description, status, priority, date);
     }
 
     modal.classList.add('hidden');
