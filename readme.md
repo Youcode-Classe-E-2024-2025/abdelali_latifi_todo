@@ -22,3 +22,45 @@ TaskFlow est un site de gestion de tâches développée pour aider les utilisate
 - HTML
 - CSS (Tailwind CSS)
 - JavaScript
+
+## Installation
+
+1. Clonez le dépôt :
+
+```bash
+git clone https://github.com/Youcode-Classe-E-2024-2025/abdelali_latifi_todolist.git
+```
+Accédez au répertoire du projet :
+
+```bash
+cd taskflow
+```
+Ouvrez le fichier index.html dans votre navigateur.
+
+## Contribuer
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez suivre ces étapes :
+
+Fork ce dépôt.
+Créez une nouvelle branche pour votre fonctionnalité :
+
+```bash
+git checkout -b ma-nouvelle-fonctionnalité
+```
+Committez vos modifications :
+
+```bash
+git commit -m 'Ajout d\'une nouvelle fonctionnalité'
+```
+Poussez vers la branche :
+```bash
+git push origin ma-nouvelle-fonctionnalité
+```
+Ouvrez une Pull Request.
+## Licence
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
+
+## Auteurs
+ NOM : LATIFI
+ PRENOM : ABDELALI
+
+
