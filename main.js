@@ -63,6 +63,7 @@ function addTaskToList(title, description, status, Priorité, date) {
 
         currentTask = taskItem; 
         modal.classList.remove('hidden');
+        
     });
 
     updateCounters();
