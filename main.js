@@ -63,17 +63,15 @@ function addTaskToList(title, description, status, Priorité, date) {
 
         currentTask = taskItem; 
         modal.classList.remove('hidden');
-        
+
     });
 
     updateCounters();
-    
 }
 
 addButton.addEventListener('click', () => {
     modal.classList.remove('hidden');
 
-    
 });
 
 closeModalButton.addEventListener('click', () => {
@@ -90,8 +88,6 @@ taskForm.addEventListener('submit', (event) => {
     const status = document.getElementById('status').value;
     const priority = document.getElementById('Priorité').value;
     const date = document.getElementById('date').value;
-
-    
 
 
     if (currentTask) {
