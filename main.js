@@ -96,7 +96,6 @@ taskForm.addEventListener('submit', (event) => {
         currentTask.remove();
         addTaskToList(title, description, status, priority, date); 
     } else {
-        // Ajouter une nouvelle tâche
         addTaskToList(title, description, status, priority, date);
     }
 
