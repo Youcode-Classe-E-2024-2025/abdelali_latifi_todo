@@ -52,7 +52,15 @@ function addTaskToList(title, description, status, Priorité) {
         updateCounters();
     });
 
+    taskItem.querySelector('.editButton').addEventListener('click', () => {
+        document.getElementById('title').value = title;
+        document.getElementById('description').value = description;
+        document.getElementById('status').value = status;
+        document.getElementById('Priorité').value = Priorité;
 
+        currentTask = taskItem; 
+        modal.classList.remove('hidden');
+    });
 
     updateCounters();
 }
@@ -72,8 +80,19 @@ taskForm.addEventListener('submit', (event) => {
     const description = document.getElementById('description').value;
     const status = document.getElementById('status').value;
     const priority = document.getElementById('Priorité').value;
-    addTaskToList(title, description, status, priority);
 
+
+    if (currentTask) {
+        currentTask.querySelector('strong').textContent = title;
+        currentTask.querySelector('textarea').value = description; 
+
+        const oldStatus = currentTask.getAttribute('data-status'); 
+        currentTask.remove();
+        addTaskToList(title, description, status, priority); 
+    } else {
+        // Ajouter une nouvelle tâche
+        addTaskToList(title, description, status, priority);
+    }
 
     modal.classList.add('hidden');
     taskForm.reset();
